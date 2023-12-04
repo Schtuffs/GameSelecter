@@ -7,8 +7,8 @@ int main() {
 	PEOPLE* people = createPersonList();
 	people->head = NULL;
 
-	add(people, "Calvin");
-	add(people, "Kyle");
+	//add template
+	//add(people, "PersonName");
 
 	setSeed();
 
