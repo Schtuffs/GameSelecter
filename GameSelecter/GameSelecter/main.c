@@ -1,9 +1,20 @@
 #include "constants.h"
 
-const char* mainGames[] = {""};
+const char* mainGames[] = { "Black Ops Cold War", "Borderlands 2", "Fortnite", "Hollow Knight", "Minecraft", "Modded Minecraft", "Monster Hunter", "Stardew", "Terraria", "Warframe" };
 const int totalMainGames = sizeof(mainGames) / sizeof(*mainGames);
 
-const char* allGames[] = {""};
+const char* allGames[] = { "Black Ops Cold War", "Bloons TD 6", "Borderlands 2", "Borderlands TPS", "Borderlands 3",
+								"Deep Rock Galactic",
+								"Elden Ring",
+								"Fortnite",
+								"God of War: Ragnarok", "GTA V",
+								"Hollow Knight",
+								"Leaf Blower Revolution",
+								"Minecraft", "Modded Minecraft", "Monster Hunter",
+								"Poly Bridge", "Poly Bridge 2", "Portal", "Portal 2", "Powerwash Simulator",
+								"R6 Siege", "Slime Rancher", "Stardew",
+								"Terraria",
+								"Warframe" "Witcher 1", "Witcher 2", "Witcher 3" };
 
 const int totalAllGames = sizeof(allGames) / sizeof(*allGames);
 
@@ -32,6 +43,9 @@ int main() {
 		break;
 	case ALL:
 		printf("You will play: %s\n", allGames[rand() % totalAllGames]);
+		break;
+	case EXITCODE:
+		printf("Aight, adios.\n");
 		break;
 	default:
 		printf("Did you see that as an option moron?\n");

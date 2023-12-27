@@ -1,0 +1,13 @@
+#pragma once
+
+#define _CRT_SECURE_NO_WARNINGS
+
+#define STRINGLENGTH	50
+
+#define CHARACTERRESTRICT	1
+#define WEAPONRESTRICT		2
+#define MANURESTRICT		3
+#define CURMAXRESTRICT		4
+#define EXITCODE			0
+
+#define MAXRESTRICTIONS		100
